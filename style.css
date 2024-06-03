@@ -1,0 +1,379 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+    line-height: 1.5;
+    color: #fff;
+    background: linear-gradient(to right, #363795, #005c97);
+}
+
+/* General styles */
+.page-container {
+    width: 100%; 
+    max-width: 100%;
+    padding: 16px;
+    margin: 0 auto;
+    position: relative;
+}
+
+section {
+    margin-bottom: 32px;
+}
+
+section .section-title {
+    font-size: 1.5rem;
+    margin-bottom: 16px;
+    margin-top: 1%;
+}
+
+/* Header styles */
+header {
+    background-image: url('./images/cover.jpg');
+    height: 200px;
+    background-position: center center;
+    background-size: cover;
+}
+
+header h1 {
+    font-size: 30px;
+    text-transform: uppercase;
+    color: #fff;
+    text-align: center;
+    padding-top: 6%;
+}
+
+/* Menu styles */
+
+.nav {
+    background-color: #333;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 100%;
+    height: 60%;
+}
+
+.nav a {
+    text-decoration: none;
+    text-align: center;
+    margin: 6px;
+    color: #fff;
+    font-weight: bold;
+    font-size: 14px;
+  }
+
+.nav a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+.nav a.active {
+    background-color: #005c97;
+    color: white;
+}
+
+
+/* Profile styles */
+.profile {
+    text-align: center;
+    margin-top: -75px;
+}
+
+.profile p {
+    text-align: justify;
+    padding-top: 1%;
+    padding-bottom: 1%;
+}
+
+.profile-image {
+    width: 150px;
+    height: 150px;
+    border: solid 4px #fff;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+.profile-image img {
+    max-width: 100%;
+    border-radius: 50%;
+}
+
+.profile-details {
+    font-size: 1rem;
+    margin: 24px 0;
+}
+
+.profile-details h1 {
+    font-size: 2rem;
+    margin-bottom: 16px;
+}
+
+.tags span {
+    font-size: 0.875rem;
+    background-color: #3d64a6;
+    padding: 4px;
+    border-radius: 5px;
+}
+
+
+/* Social profile */
+
+.social-profile {
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+}
+
+.social-profile .social-icons {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: .6rem;
+    padding-top: 1%;
+    padding-bottom: 1%;
+}  
+
+.social-profile .social-icons a {
+    text-decoration: none;
+    color: #fff;
+    background-color: #0673bc;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+}
+
+
+.social-profile .social-icons a:hover {
+    color: #0673bc;
+    background-color: #f8f9fa;
+}
+
+/* Hermes icon */
+
+.hermes-icon {
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    padding-top: 1%;
+    padding-bottom: 1%;
+}
+
+
+.hermes-icon a {
+    text-decoration: none;
+    color: #fff;
+    background-color: #0673bc;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+}
+
+.hermes-icon a:hover {
+    color: #0673bc;
+    background-color: #f8f9fa;
+}
+
+/* Leonida icon */
+
+.leonida-icon {
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    padding-top: 1%;
+    padding-bottom: 1%;
+}
+
+.leonida-icon a {
+    text-decoration: none;
+    color: #fff;
+    background-color: #0673bc;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+}
+
+.leonida-icon a:hover {
+    color: #0673bc;
+    background-color: #f8f9fa;
+}
+
+.three-columns {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;  
+    gap: 16px; 
+    text-align: center;
+}
+
+/* Project styles */
+.projects-container {
+    width: 100%;
+    max-width: 100%;
+    margin: 0 auto;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.project {
+    font-size: 1rem;
+    background-color: #3d64a6;
+    border-radius: 5px;
+    margin-bottom: 16px;
+    position: relative;
+    overflow: hidden;
+    width: 48%;
+    margin: 1%;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.project img {
+    max-width: 100%;
+}
+
+.project .project-title {
+    padding: 16px;
+    text-align: center;
+}
+
+.project-details {
+    display: none;
+    background-color: #3d64a6;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    padding: 16px;
+    text-align: center;
+}
+
+.project-details .btn-outline {
+    text-align: center;
+    text-decoration: none;
+    color: #fff;
+    padding: 8px;
+    border: solid 2px; color: #fff;
+    border-radius: 5px;
+    position: absolute;
+    left: 16px;
+    right: 16px;
+    bottom: 16px;
+}
+
+.project-details .btn-outline:hover {
+    color: #3d64a6;
+    background-color: #fff;
+}
+
+.project:hover .project-details {
+    display: block;
+}
+
+/* School info styles */
+.school-info {
+    width: 100%;
+    max-width: 100%;
+    text-align: justify;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.school-info img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 8px;
+    border-radius: 50%;
+    display: block;
+}
+
+.school-info h3 {
+    text-align: center;
+    padding-bottom: 16px;
+}
+
+.school-info p {
+    text-align: justify;
+}
+
+.school-info.left {
+    float: left;
+}
+
+.school-info.right {
+    float: right;
+}
+
+/* Footer style */
+footer {
+    font-size: 1rem;
+    text-align: center;
+    padding: 16px 0;
+}
+
+/* Media Queries for Responsive Design */
+@media screen and (max-width: 1024px) {
+    .three-columns {
+        grid-template-columns: 1fr;
+    }
+
+    .projects-container {
+        width: 100%;
+    }
+
+    .project {
+        width: 100%;
+    }
+
+    .project:nth-child(2n + 1) {
+        float: left;
+        margin-right: 4%;
+    }
+
+    .school-info {
+        width: 100%;
+    }
+
+    .school-info img {
+        max-width: 70%;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .projects-container {
+        display: block;
+    }
+
+    .project {
+        width: 48%;
+        margin: 0 0 16px 0;
+    }
+
+    .projects {
+        overflow: hidden;
+    }
+
+    .project:nth-child(2n + 1) {
+        float: left;
+        margin-right: 4%;
+    }
+
+    .school-info img {
+        max-width: 80%;
+    }
+}
+
